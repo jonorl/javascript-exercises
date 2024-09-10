@@ -8,20 +8,15 @@ const subtract = function(x, y) {
 
 const sum = function(array) {
 
-  let arr = []
-  arr = array
-
-  let summed = arr.reduce((accumulator, currentValue) => {
+  let summed = array.reduce((accumulator, currentValue) => {
     return accumulator + currentValue},0
   )
   return summed;
 };
 
 const multiply = function(array) {
-  let arr = []
-  arr = array
 
-  let multiplied = arr.reduce((accumulator, currentValue) => {
+  let multiplied = array.reduce((accumulator, currentValue) => {
     return accumulator * currentValue},1
   )
   return multiplied;
