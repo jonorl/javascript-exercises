@@ -1,12 +1,13 @@
 {
-    "plugins": [
-        "import"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "rules": {
-        "eol-last": ["error", "always"]
-    }
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier" // Add this
+  ],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
+  "rules": {
+    "react/prop-types": "off",
+    "prettier/prettier": "error" // Enforce Prettier rules
+  }
 }
